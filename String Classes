@@ -1,0 +1,25 @@
+//Michael Gardner
+//YQ86017@umbc.edu
+
+package com.company;
+public class Main {
+    public static void main(String[] args) {
+
+        String a = "Hello World";
+
+        int length = a.length();
+        System.out.println("Length is: " + length);
+        System.out.println("Substring: " + a.substring(6));
+        System.out.println("indexOf: " + a.indexOf('r'));
+        System.out.println("charAt: " + a.charAt(8));
+        System.out.println("uppercase: " + a.toUpperCase());
+        String[] parts = a.split(" ");
+        String part1 = parts[0];
+        System.out.println("split part one: " + part1);
+        boolean contain = a.contains("l");
+        System.out.println("Contains: " + contain);
+        String b = "HELLO WORLD";
+        boolean equal = a.equalsIgnoreCase(b);
+        System.out.println("equalIgnoreCase: " + equal);
+    }
+}
