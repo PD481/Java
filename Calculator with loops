@@ -1,0 +1,56 @@
+//Michael Gardner
+//YQ86017@umbc.edu
+
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        {
+
+            boolean quit = false;
+            while (quit != true) {
+                System.out.println("Welcome to the calculator!");
+                System.out.print("Enter your first number: ");
+                double a = input.nextDouble();
+                System.out.print("Enter your second number: ");
+                double b = input.nextDouble();
+                System.out.println("To quit, press 0");
+                System.out.println("To add, press 1");
+                System.out.println("To subtract, press 2");
+                System.out.println("To multiply, press 3");
+                System.out.println("To divide, press 4");
+                int answer = input.nextInt();
+
+                if (answer == 0) {
+                    System.out.print("You have chosen to quit");
+                    quit = true;
+                }
+                if (answer == 1) {
+                    double add = (a + b);
+                    System.out.println(a + " + " + b + " = " + add);
+                }
+
+                if (answer == 2) {
+                    double sub = (a - b);
+                    System.out.println(a + " - " + b + " = " + sub);
+                }
+
+                if (answer == 3) {
+                    double mul = (a * b);
+                    System.out.println(a + " * " + b + " = " + mul);
+                }
+
+                if (answer == 4) {
+                    double div = (a / b);
+                    System.out.println(a + " / " + b + " = " + div);
+                }
+
+                if (answer > 4 || answer < 0) {
+                    System.out.println("invalid response. Try again.");
+                    }
+                }
+            }
+        }
+    }
