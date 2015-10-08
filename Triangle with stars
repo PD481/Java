@@ -1,0 +1,17 @@
+//Michael Gardner
+//YQ86017@umbc.edu
+
+package com.company;
+public class Main {
+
+    public static void main(String[] args) {
+        final int max = 1;
+        for (int star = 10; star >= max; star--)
+        {
+            for (int num = 10; num >= star; num--)
+                System.out.print("*");
+
+            System.out.println();
+        }
+    }
+}
