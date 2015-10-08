@@ -1,0 +1,32 @@
+//Michael Gardner
+//YQ86017@umbc.edu
+
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        boolean quit = false;
+        while (quit != true) {
+            System.out.print("Enter your first test score: ");
+            double a = input.nextDouble();
+            System.out.print("Enter your second test score: ");
+            double b = input.nextDouble();
+            System.out.print("Enter your third test score: ");
+            double c = input.nextDouble();
+            double avg = ((a + b + c) / (3));
+            System.out.println("Your average score is: " + avg + "%");
+
+            System.out.println("Press 1 to average more test scores or 0 to quit");
+            int reply = input.nextInt();
+
+            if (reply == 0) ;
+            {
+                System.out.println("You have chosen to quit.");
+                quit = true;
+            }
+        }
+    }
+}
